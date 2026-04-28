@@ -17,8 +17,10 @@ import { RiskRegistryScreen } from './components/RiskRegistryScreen';
 import { SecurityTalksScreen } from './components/SecurityTalksScreen';
 
 export default function App() {
+  const basename = process.env.NODE_ENV === 'production' ? '/prevencioGestion' : '';
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/dashboard" element={<DashboardScreen />} />
