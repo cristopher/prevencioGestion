@@ -1,0 +1,10 @@
+{
+  "name": "SafeGuard Industrial",
+  "description": "Plataforma integral de gestión de seguridad industrial, control de acceso, inspección de maquinaria y registro de riesgos en terreno.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "Industrial Safety Management",
+    "Real-time Monitoring",
+    "Inspection Checklists"
+  ]
+}
