@@ -2,14 +2,15 @@ import { useNavigate } from 'react-router-dom';
 import { 
   Wrench, 
   Truck, 
-  AlertTriangle, 
   Users, 
   ClipboardList, 
   PieChart, 
   FileOutput, 
   Settings,
   ChevronRight,
-  UserCheck
+  UserCheck,
+  Building2,
+  ClipboardCheck
 } from 'lucide-react';
 import { Layout } from './Layout';
 
@@ -17,12 +18,13 @@ export function DashboardScreen() {
   const navigate = useNavigate();
 
   const modules = [
-    { id: 'tools', name: 'Herramientas', icon: Wrench, path: '/tools' },
-    { id: 'machinery', name: 'Maquinaria', icon: Truck, path: '/machinery' },
-    { id: 'acts', name: 'Actos/Condiciones', icon: AlertTriangle, path: '/risks' },
-    { id: 'talks', name: 'Charlas', icon: Users, path: '/talks' },
     { id: 'workers', name: 'Trabajadores', icon: ClipboardList, path: '/workers' },
-    { id: 'reports', name: 'Reportes', icon: PieChart, path: '/reports', badge: true },
+    { id: 'companies', name: 'Empresas / Subcontratos', icon: Building2, path: '/settings' }, // Path placeholder
+    { id: 'machinery', name: 'Maquinaria', icon: Truck, path: '/machinery' },
+    { id: 'tools', name: 'Herramientas', icon: Wrench, path: '/tools' },
+    { id: 'talks', name: 'Charlas integrales', icon: Users, path: '/talks' },
+    { id: 'ast', name: 'AST (Sistema de gestión)', icon: ClipboardCheck, path: '/risks' },
+    { id: 'reports', name: 'Informes', icon: PieChart, path: '/reports', badge: true },
     { id: 'export', name: 'Exportación', icon: FileOutput, path: '/export' },
     { id: 'settings', name: 'Configuración', icon: Settings, path: '/settings' },
   ];
