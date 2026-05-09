@@ -5,6 +5,7 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { LoginScreen } from './components/LoginScreen';
+import { CompanySelectionScreen } from './components/CompanySelectionScreen';
 import { DashboardScreen } from './components/DashboardScreen';
 import { AuthorizationSelectionScreen } from './components/AuthorizationSelectionScreen';
 import { MachineryEntryScreen } from './components/MachineryEntryScreen';
@@ -23,6 +24,7 @@ export default function App() {
     <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/login" element={<LoginScreen />} />
+        <Route path="/company-selection" element={<CompanySelectionScreen />} />
         <Route path="/dashboard" element={<DashboardScreen />} />
         <Route path="/authorization" element={<AuthorizationSelectionScreen />} />
         <Route path="/machinery-entry" element={<MachineryEntryScreen />} />
